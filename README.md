@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Engineering React Quiz Challenge
 
-First, run the development server:
+Quizes are common feature of our student-facing apps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## The Challenge
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Using the following wireframes, build a quiz interface. The questions are all in [questions.json]
+![Question](https://raw.githubusercontent.com/outlier-org/challenge-quiz/master/docs/wire-question.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Correct Answer](https://raw.githubusercontent.com/outlier-org/challenge-quiz/master/docs/wire-answer-correct.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Incorrect Answer](https://raw.githubusercontent.com/outlier-org/challenge-quiz/master/docs/wire-answer-incorrect.png)
 
-## Learn More
+![Progress](https://raw.githubusercontent.com/outlier-org/challenge-quiz/master/docs/wire-progress.png)
 
-To learn more about Next.js, take a look at the following resources:
+![Difficulty](https://raw.githubusercontent.com/outlier-org/challenge-quiz/master/docs/wire-difficulty.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Score](https://raw.githubusercontent.com/outlier-org/challenge-quiz/master/docs/wire-score.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Instructions
 
-## Deploy on Vercel
+How to attempt this challenge:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Create a new repo in your account and note the git url
+2. Clone this repo
+3. Solve the challenge
+4. Set your new repo as the origin: `git remote set-url origin ${your repo url}`
+5. Push your solution to your repo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You must follow these steps for your solution to be accepted -- forks or other methods will not be considered.
