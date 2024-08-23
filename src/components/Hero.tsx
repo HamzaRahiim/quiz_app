@@ -16,24 +16,9 @@ const Hero = () => {
       </h1>
       {/* Three Option */}
       <ul className="flex gap-x-4">
-        <Selects
-          name="Category"
-          option1="All"
-          option2="General Knowledge"
-          option3="Geography"
-        />
-        <Selects
-          name="Type"
-          option1="All"
-          option2="multiple"
-          option3="boolean"
-        />
-        <Selects
-          name="difficulty"
-          option1="All"
-          option2="easy"
-          option3="hard"
-        />
+        <Selects name="Category" option1="All" />
+        <Selects name="Type" option1="All" />
+        <Selects name="difficulty" option1="All" />
       </ul>
       {/* Sart Quiz Button  */}
       <Button variant="default" disabled={!isQuizReady} onClick={handleSubmit}>
