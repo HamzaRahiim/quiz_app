@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import { useEffect, useState } from "react";
 import { RootState } from "@/store/store";
 import { filterQuizData } from "@/lib/filterData";
@@ -50,15 +51,24 @@ const Quiz = () => {
     setShowPopup(true);
   };
 
+  const isClosingPopup = useRef(false); // Add a ref to track if popup is closing
+
   const closePopup = () => {
+    if (isClosingPopup.current) return; // Prevent multiple executions
+
+    isClosingPopup.current = true;
     setShowPopup(false);
     setSelectedAnswer(null);
+
     if (quizState.currentQuestionIndex === filteredQuestions.length - 1) {
-      // Last question answered, reset the quiz
       dispatch(resetQuiz());
     } else {
       dispatch(incrementCurrentQuestion());
     }
+
+    setTimeout(() => {
+      isClosingPopup.current = false;
+    }, 500); // Reset after a short delay to allow for next click
   };
 
   return (
