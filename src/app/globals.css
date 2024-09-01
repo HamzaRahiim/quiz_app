@@ -69,32 +69,70 @@
 }
 
 /* *************************** tailwind classes for home and Hero section *********************** */
-.home-class {
-  @apply mx-auto mt-10;
+.hero-main {
+  @apply mx-auto flex justify-center flex-col items-center font-serif text-white;
 }
 .heading {
-  @apply text-3xl text-center font-bold;
+  @apply md:text-[40px] text-2xl text-center md:font-bold font-semibold text-browny;
 }
-.hero-main {
-  @apply mx-auto flex justify-center flex-col items-center gap-y-20;
+.home-main {
+  @apply relative z-20 mx-auto pt-10 max-w-screen-sm pb-20 px-10 rounded-md;
 }
-
+.list-select {
+  @apply flex md:flex-row flex-col gap-y-2 md:gap-x-6 md:mb-36 mb-10 md:mt-16 mt-6;
+}
+.button-class {
+  @apply bg-browny hover:bg-white hover:text-browny;
+}
+.instruction {
+  @apply md:mt-14 mt-6 self-start font-sans;
+}
 /* *************************** tailwind classes for quiz page *********************** */
 .quiz-main {
-  @apply max-w-screen-sm mx-auto mt-8;
+  @apply max-w-screen-sm mx-auto md:mt-8 mt-4 md:pl-4;
 }
 .button-div {
-  @apply grid grid-cols-2 gap-4 gap-y-6;
+  @apply grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-y-6;
 }
 .score-par {
-  @apply max-w-screen-sm h-16 bg-gray-400 border border-slate-400 grid grid-cols-2 pb-3;
+  @apply md:w-[640px] md:h-16 w-72 bg-greeny grid grid-cols-2 pb-3 px-2 md:px-4 rounded-md;
 }
 .progres-div {
-  @apply h-6 w-[550px] border border-black mx-auto col-span-2 relative;
+  @apply h-6 md:w-[600px] mx-auto w-full border border-greeny col-span-2 relative;
 }
 .progres-child {
   @apply absolute h-full;
 }
 .quiz-h1 {
-  @apply quiz-main;
+  @apply text-white md:text-3xl text-2xl;
+}
+.recent-q {
+  @apply md:py-14 py-6 font-medium text-white;
+}
+.inside-butt {
+  @apply border-teal-600 w-60 hover:outline-teal-200 hover:bg-[#b4cf3eaf] hover:text-white;
+}
+.no-question {
+  @apply flex flex-col w-full h-full justify-center items-center px-3 md:px-0;
+}
+.link-style {
+  @apply text-blue-500 hover:underline-offset-2 underline;
+}
+.pop-style {
+  @apply flex flex-col justify-center items-center bg-black/5 border-none;
+}
+.score-sect {
+  @apply absolute md:left-[350px] md:bottom-10 -bottom-24 bg-teal-950 md:bg-none px-4 md:px-0 pb-4 md:pb-0;
+}
+.text-res {
+  @apply text-sm md:text-lg;
+}
+.instt-main {
+  @apply flex mb-5 justify-between flex-col md:flex-row pt-3 md:pt-0 px-2 md:px-0;
+}
+.instt-span {
+  @apply mr-2 border rounded-full text-xs px-2;
+}
+.instt-h {
+  @apply text-white text-sm md:text-base;
 }

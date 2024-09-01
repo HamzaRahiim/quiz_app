@@ -1,13 +1,5 @@
-// slices/filterSlice.ts
-
+import { FilterState } from "@/app/types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-interface FilterState {
-  category: string;
-  type: string;
-  difficulty: string;
-  isQuizReady: boolean;
-}
 
 const initialState: FilterState = {
   category: "",
